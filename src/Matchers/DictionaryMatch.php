@@ -107,7 +107,7 @@ class DictionaryMatch extends Match
     {
         switch ($this->dictionaryName) {
             case 'user_inputs':
-                return 'This is easy to guess based on the other inputs';
+                return 'This is similar to, or incorporates parts of, other input';
             case 'passwords':
                 if ($isSoleMatch && !$this->l33t && !$this->reversed) {
                     if ($this->rank <= 10) {
